@@ -1,5 +1,5 @@
 package testing;
-/*
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -10,11 +10,12 @@ import model.Dragonite;
 public class TestDragonite {
 	@Test
 	public void testCharacteristicsMethod() {
-		Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+	//	Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+		Dragonite p = new Dragonite("AAA",4, null, null, null, null);
 		String temp = "Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.";
 		assertEquals(temp,p.getCharacteristics());		
 		try {
-			Dragonite p = new Dragonite(null,0,null,null,null,0);
+			Dragonite p1 = new Dragonite(null,0,null,null,null,null);
 			temp = null;
 			p1.getCharacteristics();
 		}
@@ -25,11 +26,12 @@ public class TestDragonite {
 	
 	@Test
 	public void testTypeMethod() {
-		Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+	//	Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+		Dragonite p = new Dragonite("AAA",4, null, null, null, null);
 		String temp = "DRAGON";
 		assertEquals(temp,p.getType());		
 		try {
-			Dragonite p = new Dragonite(null,0,null,null,null,0);
+			Dragonite p1 = new Dragonite(null,0,null,null,null,null);
 			temp = null;
 			p1.getType();
 		}
@@ -40,11 +42,12 @@ public class TestDragonite {
 	
 	@Test
 	public void testEvolutionMethod() {
-		Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+	//	Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+		Dragonite p = new Dragonite("AAA",4, null, null, null, null);
 		String temp = "DRATINI";
 		assertEquals(temp,p.getEvolution());		
 		try {
-			Dragonite p = new Dragonite(null,0,null,null,null,0);
+			Dragonite p1 = new Dragonite(null,0,null,null,null,null);
 			temp = null;
 			p1.getEvolution();
 		}
@@ -55,11 +58,12 @@ public class TestDragonite {
 	
 	@Test
 	public void testBaseExpMethod() {
-		Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+	//	Dragonite p = new Dragonite("AAA",4,"Dragonite is capable of flying faster than the speed of sound. It is a kindhearted Pokémon with human-like intelligence. It shows signs of altruism.","DRAGON","DRATINI",270);
+		Dragonite p = new Dragonite("AAA",4, null, null, null, null);
 		int temp = 270;
 		assertEquals(temp,p.getBaseExp());		
 		try {
-			Dragonite p = new Dragonite(null,0,null,null,null,0);
+			Dragonite p1 = new Dragonite(null,0,null,null,null,null);
 			temp = 0;
 			p1.getBaseExp();
 		}
@@ -68,4 +72,4 @@ public class TestDragonite {
 		}
 	}
 }
-*/
+

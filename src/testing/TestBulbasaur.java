@@ -1,5 +1,5 @@
 package testing;
-/*
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
@@ -11,13 +11,14 @@ public class TestBulbasaur {
 	
 	@Test
 	public void testCharacteristicsMethod() {
-		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+	//	Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+		Bulbasaur p = new Bulbasaur("AAA",4, null, null, null, null);
 		String temp = "Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.";
-		assertEquals(temp,bulbasaur.getCharacteristics());		
+		assertEquals(temp,p.getCharacteristics());		
 		try {
-			Bulbasaur bulb = new Bulbasaur(null,0,null,null,null,0);
+			Bulbasaur p1= new Bulbasaur(null,0,null,null,null,null);
 			temp = null;
-			bulb.getCharacteristics();
+			p1.getCharacteristics();
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -26,11 +27,12 @@ public class TestBulbasaur {
 	
 	@Test
 	public void testTypeMethod() {
-		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+//		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+		Bulbasaur p = new Bulbasaur("AAA",4, null, null, null, null);
 		String temp = "POISON";
-		assertEquals(temp,bulbasaur.getType());		
+		assertEquals(temp,p.getType());		
 		try {
-			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,0);
+			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,null);
 			temp = null;
 			p1.getType();
 		}
@@ -41,11 +43,12 @@ public class TestBulbasaur {
 	
 	@Test
 	public void testEvolutionMethod() {
-		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+	//	Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+		Bulbasaur p = new Bulbasaur("AAA",4, null, null, null, null);
 		String temp = "IVYSAUR";
-		assertEquals(temp,bulbasaur.getEvolution());		
+		assertEquals(temp,p.getEvolution());		
 		try {
-			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,0);
+			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,null);
 			temp = null;
 			p1.getEvolution();
 		}
@@ -56,11 +59,12 @@ public class TestBulbasaur {
 	
 	@Test
 	public void testBaseExpMethod() {
-		Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+	//	Bulbasaur bulbasaur = new Bulbasaur("bulbsaur",4,"Bulbasaur is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon in the Kanto region.","POISON","IVYSAUR",64);
+		Bulbasaur p = new Bulbasaur("AAA",4, null, null, null, null);
 		int temp = 64;
-		assertEquals(temp,bulbasaur.getBaseExp());		
+		assertEquals(temp,p.getBaseExp());		
 		try {
-			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,0);
+			Bulbasaur p1 = new Bulbasaur(null,0,null,null,null,null);
 			temp = 0;
 			p1.getBaseExp();
 		}
@@ -70,4 +74,4 @@ public class TestBulbasaur {
 	}
 }
 
-*/
+
